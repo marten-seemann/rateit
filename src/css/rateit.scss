@@ -1,0 +1,93 @@
+$rateit_asset_dir: '' !default;
+
+$background-star-width: 16px;
+$background-star-height: 64px;
+$background-delete-width: 16px;
+$background-delete-height: 32px;
+
+
+@mixin star-background() {
+  @include background('stars', $background-star-width, $background-star-height);
+}
+
+@mixin delete-background() {
+  @include background('delete', $background-delete-width, $background-delete-height);
+}
+
+@mixin background($filename, $width, $height) {
+    background: url('#{$rateit_asset_dir}#{$filename}.png');
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        background: url('#{$rateit_asset_dir}#{$filename}@2x.png');
+        background-size: $width $height;
+    }
+}
+
+@mixin position($dir, $amount) {
+    background-position: $dir $amount;
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+        background-position: $dir $amount;
+    }
+}
+
+
+div.rateit {
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+div.rateit div.rateit-range {
+    position: relative;
+    display: inline-block;
+    @include star-background();
+    height: 16px;
+}
+
+
+div.rateit div.rateit-hover, div.rateit div.rateit-selected {
+    position: absolute;
+    left: 0px;
+}
+
+div.rateit div.rateit-hover-rtl, div.rateit div.rateit-selected-rtl {
+    left: auto;
+    right: 0px;
+}
+
+div.rateit div.rateit-hover {
+    @include star-background();
+    @include position(left, -32px);
+}
+
+div.rateit div.rateit-hover-rtl {
+    @include position(right, -32px);
+}
+
+div.rateit div.rateit-selected {
+    @include star-background();
+    @include position(left, -16px);
+}
+
+div.rateit div.rateit-selected-rtl {
+    @include position(right, -16px);
+}
+
+div.rateit div.rateit-preset, div.rateit div.rateit-preset-rtl {
+    @include star-background();
+    @include position(left, -48px);
+}
+
+div.rateit .rateit-reset {
+    display: inline-block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    border: 0;
+    @include delete-background();
+    @include position(left, 0);
+}
+
+div.rateit .rateit-reset:hover {
+    @include position(left, -16px);
+}

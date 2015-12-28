@@ -1,0 +1,21 @@
+{
+  "name": "RateIt",
+  "authors": [
+    "Marten Seemann"
+  ],
+  "description": "a jQuery (star) rating plugin",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.6.0 - 2"
+  }
+}
