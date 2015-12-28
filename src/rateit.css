@@ -25,18 +25,6 @@
     display:block;
 }
 
-/* for IE 6 */
-* html .rateit, * html .rateit .rateit-range
-{
-    display: inline;
-}
-
-/* for IE 7 */
-* + html .rateit, * + html .rateit .rateit-range
-{
-    display: inline;
-}
-
 .rateit .rateit-hover, .rateit .rateit-selected
 {
     position: absolute;
