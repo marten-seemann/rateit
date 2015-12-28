@@ -42,6 +42,7 @@ div.rateit div.rateit-range {
     display: inline-block;
     @include star-background();
     height: 16px;
+    outline: none;
 }
 
 

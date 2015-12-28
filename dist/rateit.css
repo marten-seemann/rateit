@@ -11,7 +11,8 @@ div.rateit div.rateit-range {
   position: relative;
   display: inline-block;
   background: url("stars.png");
-  height: 16px; }
+  height: 16px;
+  outline: none; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
     div.rateit div.rateit-range {
       background: url("stars@2x.png");
