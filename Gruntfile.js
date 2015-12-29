@@ -39,7 +39,7 @@ module.exports = function(grunt) {
       assets: {
         files: [
           { src: 'src/js/jquery.rateit.js', dest: 'dist/jquery.rateit.js' },
-          { src: ['*.png'], dest: 'dist/', expand: true, cwd: 'src/assets/' },
+          { src: ['*.png'], dest: 'dist/assets/', expand: true, cwd: 'src/assets/' },
         ]
       }
     },

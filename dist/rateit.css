@@ -9,12 +9,12 @@
   .rateit .rateit-range {
     position: relative;
     display: inline-block;
-    background: url("stars.png");
+    background: url("assets/stars.png");
     height: 16px;
     outline: none; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .rateit .rateit-range {
-        background: url("stars@2x.png");
+        background: url("assets/stars@2x.png");
         background-size: 16px 64px; } }
   .rateit .rateit-hover, .rateit .rateit-selected {
     position: absolute;
@@ -23,11 +23,11 @@
     left: auto;
     right: 0px; }
   .rateit .rateit-hover {
-    background: url("stars.png");
+    background: url("assets/stars.png");
     background-position: left -32px; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .rateit .rateit-hover {
-        background: url("stars@2x.png");
+        background: url("assets/stars@2x.png");
         background-size: 16px 64px; } }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .rateit .rateit-hover {
@@ -38,11 +38,11 @@
       .rateit .rateit-hover-rtl {
         background-position: right -32px; } }
   .rateit .rateit-selected {
-    background: url("stars.png");
+    background: url("assets/stars.png");
     background-position: left -16px; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .rateit .rateit-selected {
-        background: url("stars@2x.png");
+        background: url("assets/stars@2x.png");
         background-size: 16px 64px; } }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .rateit .rateit-selected {
@@ -53,11 +53,11 @@
       .rateit .rateit-selected-rtl {
         background-position: right -16px; } }
   .rateit .rateit-preset, .rateit .rateit-preset-rtl {
-    background: url("stars.png");
+    background: url("assets/stars.png");
     background-position: left -48px; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .rateit .rateit-preset, .rateit .rateit-preset-rtl {
-        background: url("stars@2x.png");
+        background: url("assets/stars@2x.png");
         background-size: 16px 64px; } }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .rateit .rateit-preset, .rateit .rateit-preset-rtl {
@@ -68,11 +68,11 @@
     width: 16px;
     height: 16px;
     border: 0;
-    background: url("delete.png");
+    background: url("assets/delete.png");
     background-position: left 0; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .rateit .rateit-reset {
-        background: url("delete@2x.png");
+        background: url("assets/delete@2x.png");
         background-size: 16px 32px; } }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
       .rateit .rateit-reset {
